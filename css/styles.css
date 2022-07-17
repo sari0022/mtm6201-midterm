@@ -1,0 +1,410 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #F7F7F2;
+}
+
+nav {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #292F36;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo img {
+    width: 108px;
+    height:auto;
+    margin-left: 20px;
+    padding-top: 5px;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 75px;
+    background: #292F36;
+    float: right;
+    text-align: center;
+    transition: all .5s;
+}
+
+.menu li {
+    opacity: 0;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.menu li a:hover {
+    color: #0279e5;
+    transition: 0.5s;
+}
+
+.hamburger-btn {
+    display: block;
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 75px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .menu {
+    height: 100vh;
+}
+
+#check:checked ~ .menu li {
+    opacity: 1;
+}
+
+
+.hero {
+    background-image: url(../images/brooke-lark-wMzx2nBdeng-unsplash.jpg) ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    overflow:hidden;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    background-color: rgba(0,0,0,0.5);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    padding-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #292F36;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+button:hover {
+    border: solid 1px white;
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: white;
+    color: #292F36;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+/* Menu section */
+
+.menu-banner {
+        background-image: url(/mtm6201-midterm/images/Menu-banner.png);
+    width: auto;
+    height: 520px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-grid {
+    display: block;
+    padding: 16px;
+    width: min(100% - 2rem, 1080px);
+    margin-inline: auto;
+    margin-top: 100px;
+}
+
+.col {
+    background-color: #292F36;
+    margin-bottom: 16px;
+    padding: 16px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3%;
+}
+
+.col :nth-child(1) {
+    align-self: center;
+}
+
+
+
+.menu-image {
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+    padding-bottom: 20px
+    
+}
+
+.col h2 {
+    margin-bottom: 0;
+    color: white;
+    padding-left: 10px;
+}
+
+.col p {
+    color: white;
+    padding-left: 10px;
+}
+
+footer {
+    background-color: #292F36;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    margin-top: 16px;
+}
+
+footer p {
+    padding-top: 15px;
+}
+
+/* About Us section */
+
+.aboutus-banner {
+    background-image: url(/mtm6201-midterm/images/Aboutus-banner.png);
+width: auto;
+height: 520px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.aboutus {
+    width: min(100% - 2rem, 1080px);
+    margin-inline: auto;
+    margin-top: 100px;
+}
+
+.section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section-text {
+    background-color:#292F36;
+    padding: 15px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.section-text h2 {
+    padding-bottom: 10px;
+    font-size: 35px;
+}
+
+.section-text p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.aboutus-button {
+    background-color: white;
+    color: #292F36;
+}
+
+/* Contact Us section */
+
+.contactus-banner {
+    background-image: url(/mtm6201-midterm/images/Contactus-banner.png);
+width: auto;
+height: 520px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.contactus {
+    width: min(100% - 2rem, 1280px);
+    margin-inline: auto;
+    margin-top: 100px;
+}
+
+.contactus h2 {
+    margin-bottom: 16px;
+}
+
+.contact input {
+    width: 560px;
+}
+
+.contact #message{
+    height: 150px;
+}
+
+.contact .send {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #292F36;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.social {
+    display: block;
+    padding: 16px;
+}
+
+.social-a {
+    background-color: #292F36;
+    margin-bottom: 16px;
+    padding: 16px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    color: white;
+}
+
+i {
+    font-size: 24px;
+}
+
+
+@media screen and (min-width: 760px) {
+
+    .logo { 
+        margin-left: 25px;
+    }
+
+    .hamburger-btn {
+        display: none;
+    }
+
+    .menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        float: right;
+        text-align: right;
+        margin-right: 25px;
+        transition: none;
+    }
+
+    .menu li {
+        display: inline-block;
+        opacity: 1;
+        line-height: 100px;
+        margin: 0 20px;
+        transition:none;
+
+    }
+
+    /* Media screen for Menu page */
+
+    .menu-grid {
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Media screen for Aboutus page */
+
+    .aboutus{
+        margin-bottom: 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "one two"
+        "four three "
+        "five six"
+    }
+
+    .aboutus :nth-child(1) {
+        grid-area: one;
+    }
+
+    .aboutus :nth-child(2) {
+        grid-area: two;
+    }
+
+    .aboutus :nth-child(3) {
+        grid-area: three;
+    }
+
+    .aboutus :nth-child(4) {
+        grid-area: four;
+    }
+
+    .aboutus :nth-child(5) {
+        grid-area: five;
+    }
+
+    .aboutus :nth-child(6) {
+        grid-area: six;
+    }
+
+    .section-text {
+        margin-bottom: 0px;
+    }
+
+    .aboutus img { 
+        margin-top: 0px;
+    }
+
+     /* Media screen for Contactus page */
+
+     .contactus {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+     }
+
+     .social {
+         display: grid;
+         grid-gap: 16px;
+         grid-template-columns: 1fr 1fr ;
+     }
+
+     .social-main {
+         height: 200px;
+     }
+     
+}
